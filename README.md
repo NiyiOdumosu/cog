@@ -15,6 +15,10 @@ Powerful access control means you can collaborate around even the most sensitive
 
 Cog is production ready! :tada:
 
+## Build
+
+If you need to rebuild cog, just run `make docker`
+
 ## More Links
 
 * [Cog Public Slack Community](http://slack.operable.io/)

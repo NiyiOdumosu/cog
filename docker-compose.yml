@@ -50,10 +50,11 @@ services:
     extends:
       file: docker-compose.common.yml
       service: common
-    image: operable/cog:latest
+    image: quay.io/hearst/cog:latest
     environment:
       - COG_MQTT_HOST=0.0.0.0
       - DATABASE_URL=ecto://cog:cog@postgres:5432/cog
+      - COG_ALLOW_SELF_REGISTRATION=1
     depends_on:
       - postgres
     ports:
